@@ -1,0 +1,42 @@
+body{
+    background-image: url(img/02.png);
+    
+            
+    /* Faz com que a imagem ocupe 100% da tela */
+    background-size: cover;
+
+    /* Impede a repetição da imagem */
+    background-repeat: no-repeat;
+
+    /* Garante que a imagem fique centralizada */
+    background-position: center center;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Faz o link herdar a cor do texto ao redor */
+    font-family: 'Poppins', sans-serif; /* Muda a fonte (exemplo com Poppins) */
+    font-size: 18px; /* Ajuste do tamanho da fonte */
+}
+
+.row3 img {
+    width: 150px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Evita espaços extras ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.row, .row3 {
+    margin-bottom: 30px; /* Adiciona espaçamento entre as linhas */
+}
+
+
+@media (min-width: 78px) {
+    .col-6 {
+        width: 50%;
+        margin-right: 30%;
+    }
+    .col-6 img {
+        max-width: 100%; 
+    }
+}
